@@ -1,0 +1,40 @@
+<div class="search container">
+    <div class="row">
+        <div class="col-xs-12">
+        {{#if total}}
+            <span class="search__results">{{total}}</span> <span>results found</span>
+        {{else}}
+            <span class="search__results">No results found</span> <a href="/search">Go back</a>
+        {{/if}}
+        </div>
+    </div>
+</div>
+
+<ul class="properties container">
+{{#each properties}}
+    <li class="property row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <img src="{{image_url}}" class="property__image" alt="property image" />
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="property__title">
+                <span class="property__bedrooms">{{num_bedrooms}}</span> <span class="property__type">{{property_type}}</span> for sale
+            </div>
+            <div class="property__price">
+                &#163;{{price}}
+            </div>
+            <div class="property__description">
+                {{description}}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-2">
+            <div class="agent clearfix">
+                <img src="{{agent_logo}}" class="agent__logo" alt="agent logo" />
+                <p class="agent__name">{{agent_name}}</p>
+                <p class="agent__address">{{agent_address}} {{agent_postcode}}</p>
+                <p class="agent__phone">{{agent_phone}}</p>
+            </div>
+        </div>
+    </li>
+{{/each}}
+</ul>
