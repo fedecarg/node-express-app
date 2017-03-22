@@ -20,7 +20,7 @@ Then visit http://localhost:3000/search
 
 ### Run the tests
 
-I have added some Jasmine (https://mochajs.org) tests. To tun them:
+I have added some Jasmine (https://jasmine.github.io/) tests. To tun them:
 
 ```
 npm start
