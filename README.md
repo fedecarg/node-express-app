@@ -20,7 +20,7 @@ Then visit http://localhost:3000/search
 
 ### Run the tests
 
-I have added some Jasmine tests. To tun them:
+To tun the Jasmine tests:
 
 ```
 npm start
