@@ -1,0 +1,126 @@
+body {
+    font-size: 140%;
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+.container {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+[class^='col'] {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.properties {
+    list-style: none;
+}
+
+.property + .property {
+    margin-top: 32px;
+}
+
+.property__image {
+    background-color: #eee;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.property__description {
+    margin-bottom: 16px;
+}
+
+.property__title {
+    font-size: 1.6em;
+    margin-bottom: 5px;
+}
+
+.property__price {
+    color: red;
+    font-size: 1.6em;
+    margin-bottom: 5px;
+}
+
+.agent {
+    background-color: #eee;
+    font-size: 80%;
+    padding: 8px;
+}
+
+.agent__logo {
+    background-color: #eee;
+    height: 40px;
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+/* Medium */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
+
+    [class^='col'] {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .property + .property {
+        margin-top: 48px;
+    }
+
+    .property__image {
+        margin-bottom: 0;
+    }
+
+    .agent {
+        margin-top: 24px;
+    }
+
+    .agent__logo {
+        float: left;
+        margin-bottom: 0;
+        margin-right: 24px;
+    }
+
+    .agent__name,
+    .agent__address {
+        float: left;
+        margin-right: 24px;
+        margin-top: 12px;
+    }
+
+    .agent__phone {
+        margin-top: 12px;
+    }
+}
+
+/* Large */
+@media (min-width: 992px) {
+    body {
+        font-size: 160%;
+    }
+
+    .container {
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
+
+    [class^='col'] {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .property + .property {
+        margin-top: 64px;
+    }
+
+    .property__image {
+        margin-bottom: 0;
+    }
+}
