@@ -1,6 +1,6 @@
 ## UK Property Finder
 
-This repository demonstrates the usage of Node.js, Express.js and Jasmine.
+This repository demonstrates the use of Node.js, Express.js and Jasmine.
 
 ### Install
 
