@@ -23,5 +23,5 @@ Then visit http://localhost:3000/search
 To tun the Jasmine tests:
 
 ```
-npm start
+npm test
 ```
