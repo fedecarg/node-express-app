@@ -6,13 +6,14 @@
     "email": "fedecarg@gmail.com"
   },
   "scripts": {
-    "start": "./node_modules/.bin/cross-env NODE_ENV=development ./node_modules/.bin/nodemon app.js",
-    "test": "./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/jasmine-node --verbose test"
+    "build:dev": "echo build:dev",
+    "build:prod": "echo build:prod",
+    "start": "./node_modules/.bin/cross-env ./node_modules/.bin/nodemon app.js",
+    "test": "./node_modules/.bin/cross-env ./node_modules/.bin/jasmine-node --verbose test"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
-    "debug": "~2.2.0",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "morgan": "^1.7.0",
@@ -21,8 +22,8 @@
   "devDependencies": {
     "cross-env": "^3.1.3",
     "jasmine-node": "^1.14.5",
-    "nodemon": "~1.11.0",
-    "request":  "^2.81.0"
+    "nodemon": "~1.17.5",
+    "request": "^2.81.0"
   },
   "repository": {
     "type": "git",
