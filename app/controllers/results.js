@@ -11,7 +11,8 @@ router.post('/results', function(req, res) {
 
     res.render('results', {
         properties: properties,
-        total: properties.length
+        total: properties.length,
+        layout: 'search'
     });
 });
 

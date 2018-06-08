@@ -16,7 +16,7 @@ var express = require('express'),
     cookieParser = require('cookie-parser');
 
 var app = express(),
-    port = process.env.PORT || 3000;
+    port = process.env.APP_PORT || 3000;
 
 // config
 app.use(logger('dev'));
@@ -34,6 +34,7 @@ app.set('views', path.join(__dirname, 'app/views'));
 app.set('view engine', 'handlebars');
 
 // controllers
+app.use(require('./app/controllers/index'));
 app.use(require('./app/controllers/search'));
 app.use(require('./app/controllers/results'));
 
@@ -55,7 +56,7 @@ app.use(function(err, req, res, next) {
 
 app.listen(port);
 if (app.get('env') === 'development') {
-    console.log('Express app started on port ' + port);
+    console.log('Express app started on port: ' + port);
 }
 
 module.exports = app;
