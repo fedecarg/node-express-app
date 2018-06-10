@@ -1,6 +1,6 @@
-## AWS Fargate + Node
+## Find a Property in North London
 
-This repository demonstrates the use of AWS Fargate, Docker, Node.js and Express.js.
+This repository demonstrates the use of Docker, Node.js and Express.js.
 
 ### Install
 
@@ -16,7 +16,7 @@ npm install
 npm start
 ```
 
-Then visit http://localhost:3000/
+Then visit http://localhost:3000/search
 
 ### Run the tests
 
