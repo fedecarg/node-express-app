@@ -1,6 +1,6 @@
-## UK Property Finder
+## AWS Fargate + Node
 
-This repository demonstrates the use of Node.js, Express.js and Jasmine.
+This repository demonstrates the use of AWS Fargate, Docker, Node.js and Express.js.
 
 ### Install
 
@@ -16,7 +16,7 @@ npm install
 npm start
 ```
 
-Then visit http://localhost:3000/search
+Then visit http://localhost:3000/
 
 ### Run the tests
 
